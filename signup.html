@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up — Avaris Learn</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-slate-50">
+  <div class="max-w-md mx-auto px-4 py-12">
+    <a href="./index.html" class="flex items-center gap-2 mb-8">
+      <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white font-semibold">A</span>
+      <span class="font-semibold">Avaris Learn</span>
+    </a>
+
+    <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+      <h1 class="text-xl font-semibold">Create your account</h1>
+      <p class="text-sm text-slate-600 mt-1">Start your learning journey today</p>
+
+      <form class="mt-6 space-y-4" id="signupForm">
+        <label class="block">
+          <span class="text-sm text-slate-700">Full Name</span>
+          <input type="text" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Jane Doe" />
+        </label>
+        <label class="block">
+          <span class="text-sm text-slate-700">Email</span>
+          <input type="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="you@example.com" />
+        </label>
+        <label class="block">
+          <span class="text-sm text-slate-700">Password</span>
+          <input type="password" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="••••••••" />
+        </label>
+        <button type="submit" class="w-full rounded-xl bg-indigo-600 text-white py-2.5 font-medium hover:bg-indigo-700">Create Account</button>
+      </form>
+
+      <p class="text-sm text-slate-600 mt-6">Already have an account? <a class="text-indigo-600 hover:underline" href="./login.html">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- ============================= -->
+<!-- 3) signup.html (Auth: SignUp) -->
+<!-- ============================= -->

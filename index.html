@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avaris Learn — Level up, faster.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+          "Segoe UI Emoji";
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-slate-900 text-white px-3 py-2 rounded-md"
+      >Skip to content</a
+    >
+
+    <!-- Header / Nav -->
+    <header
+      class="sticky top-0 z-40 backdrop-blur border-b border-slate-200/60 bg-white/70"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <!-- Logo -->
+          <a href="./index.html" class="flex items-center gap-2 font-semibold">
+            <span
+              class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white"
+              >A</span
+            >
+            <span class="text-slate-800">Avaris Learn</span>
+          </a>
+          <!-- Nav -->
+          <nav class="hidden md:flex items-center gap-8 text-sm">
+            <a href="#features" class="hover:text-indigo-600">Features</a>
+            <a href="#about" class="hover:text-indigo-600">About</a>
+            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+          </nav>
+          <!-- Actions -->
+          <div class="hidden md:flex items-center gap-3">
+            <a
+              href="./login.html"
+              class="text-sm font-medium hover:text-indigo-700"
+              >Login</a
+            >
+            <a
+              href="./signup.html"
+              class="inline-flex items-center justify-center text-sm font-medium rounded-xl px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-700"
+              >Sign Up</a
+            >
+          </div>
+          <!-- Mobile menu button -->
+          <button
+            id="mobileMenuBtn"
+            class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl border border-slate-200 hover:bg-slate-50"
+            aria-label="Open menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Drawer -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden border-t border-slate-200 bg-white"
+      >
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+          <a href="#features" class="py-2">Features</a>
+          <a href="#about" class="py-2">About</a>
+          <a href="#contact" class="py-2">Contact</a>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="./login.html" class="py-2">Login</a>
+            <a
+              href="./signup.html"
+              class="inline-flex items-center justify-center rounded-xl px-4 py-2 bg-indigo-600 text-white"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <!-- Wireframe: [Logo + Nav] [Headline + Subtext + CTA] [Illustration] -->
+      <section class="relative overflow-hidden">
+        <div
+          class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50 via-white to-teal-50"
+        ></div>
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center"
+        >
+          <div class="space-y-6">
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight"
+            >
+              Learn faster with a
+              <span class="text-indigo-600">clear path</span>.
+            </h1>
+            <p class="text-base sm:text-lg text-slate-600 max-w-prose">
+              Avaris Learn helps you track courses, deadlines, and assignments
+              with a calm, distraction-free dashboard. Built for students,
+              creators, and teams.
+            </p>
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                href="./signup.html"
+                class="inline-flex items-center justify-center rounded-xl px-5 py-3 bg-indigo-600 text-white hover:bg-indigo-700 font-medium"
+                >Get Started</a
+              >
+              <a
+                href="#features"
+                class="inline-flex items-center justify-center rounded-xl px-5 py-3 border border-slate-300 hover:bg-slate-50 font-medium"
+                >See features</a
+              >
+            </div>
+            <div class="flex items-center gap-6 pt-2 text-slate-500 text-sm">
+              <div class="flex items-center gap-2">
+                <span
+                  class="inline-block h-2.5 w-2.5 rounded-full bg-teal-500"
+                ></span
+                >Progress tracking
+              </div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="inline-block h-2.5 w-2.5 rounded-full bg-purple-500"
+                ></span
+                >Smart reminders
+              </div>
+            </div>
+          </div>
+          <!-- Illustration / Banner -->
+          <div class="relative">
+            <div
+              class="aspect-[4/3] rounded-2xl border border-slate-200 bg-white shadow-sm grid place-items-center"
+            >
+              <div class="text-center p-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  class="mx-auto h-20 w-20 text-indigo-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 14l9-5-9-5-9 5 9 5z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5 12.083 12.083 0 015.84 10.578L12 14z"
+                  />
+                </svg>
+                <p class="mt-4 text-slate-500">
+                  Illustration placeholder
+                  <span class="block text-xs">Replace with product mockup</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 text-center">
+            <h2 class="text-2xl sm:text-3xl font-semibold">
+              Everything you need to stay on track
+            </h2>
+            <p class="mt-3 text-slate-600">
+              Clean, predictable components that scale with you.
+            </p>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Feature Card -->
+            <article
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <div
+                class="h-10 w-10 rounded-xl bg-indigo-50 text-indigo-600 grid place-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 5h12M9 3v2m-6 4h18M3 9v12h18V9"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Course Planner</h3>
+              <p class="mt-1 text-sm text-slate-600">
+                Organize modules, track prerequisites, and map your learning
+                path.
+              </p>
+            </article>
+            <article
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <div
+                class="h-10 w-10 rounded-xl bg-teal-50 text-teal-600 grid place-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 8v8m4-4H8m12 0A8 8 0 114 12a8 8 0 0116 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Assignments</h3>
+              <p class="mt-1 text-sm text-slate-600">
+                Create, submit, and grade with clear status indicators.
+              </p>
+            </article>
+            <article
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <div
+                class="h-10 w-10 rounded-xl bg-purple-50 text-purple-600 grid place-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 12h18M3 6h18M3 18h18"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Progress</h3>
+              <p class="mt-1 text-sm text-slate-600">
+                Visualize completion with streaks and milestone badges.
+              </p>
+            </article>
+            <article
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <div
+                class="h-10 w-10 rounded-xl bg-blue-50 text-blue-600 grid place-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Integrations</h3>
+              <p class="mt-1 text-sm text-slate-600">
+                Connect calendars, storage, and LMS tools you already use.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section
+        id="about"
+        class="py-16 md:py-24 border-t border-slate-200 bg-slate-50"
+      >
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+              <h2 class="text-2xl sm:text-3xl font-semibold">
+                About Avaris Learn
+              </h2>
+              <p class="text-slate-600">
+                We believe education should feel focused and humane. Our
+                platform strips away clutter so you can concentrate on the next
+                right step—one course, one assignment, one milestone at a time.
+              </p>
+              <p class="text-slate-600">
+                Designed for speed and clarity, Avaris Learn brings modern SaaS
+                craft to EdTech: smart defaults, predictable patterns, and
+                components you can trust.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <dl class="grid grid-cols-2 gap-6">
+                <div>
+                  <dt class="text-sm text-slate-500">Students supported</dt>
+                  <dd class="text-xl font-semibold">10k+</dd>
+                </div>
+                <div>
+                  <dt class="text-sm text-slate-500">Avg. productivity lift</dt>
+                  <dd class="text-xl font-semibold">+27%</dd>
+                </div>
+                <div>
+                  <dt class="text-sm text-slate-500">Uptime</dt>
+                  <dd class="text-xl font-semibold">99.9%</dd>
+                </div>
+                <div>
+                  <dt class="text-sm text-slate-500">Integrations</dt>
+                  <dd class="text-xl font-semibold">20+</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / CTA -->
+      <section id="contact" class="py-16">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 class="text-xl sm:text-2xl font-semibold">Ready to start?</h3>
+          <p class="mt-2 text-slate-600">
+            Create an account and explore the dashboard in minutes.
+          </p>
+          <a
+            href="./signup.html"
+            class="mt-6 inline-flex items-center justify-center rounded-xl px-5 py-3 bg-indigo-600 text-white hover:bg-indigo-700 font-medium"
+            >Get Started</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+        >
+          <a href="#" class="flex items-center gap-2 font-semibold">
+            <span
+              class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white"
+              >A</span
+            >
+            <span class="text-slate-800">Avaris Learn</span>
+          </a>
+          <nav class="flex items-center gap-6 text-sm text-slate-600">
+            <a href="#about" class="hover:text-indigo-600">About</a>
+            <a href="#" class="hover:text-indigo-600">Privacy Policy</a>
+            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <!-- Socials -->
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="h-9 w-9 grid place-items-center rounded-xl border border-slate-200 hover:bg-slate-50"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19.633 7.997c.013.18.013.36.013.54 0 5.499-4.186 11.84-11.84 11.84-2.354 0-4.541-.69-6.384-1.885.33.038.648.051.992.051a8.39 8.39 0 005.2-1.792 4.195 4.195 0 01-3.914-2.907c.256.038.512.064.781.064.371 0 .742-.051 1.088-.141a4.188 4.188 0 01-3.356-4.114v-.051c.548.307 1.18.5 1.852.526a4.183 4.183 0 01-1.868-3.488c0-.768.205-1.472.564-2.086a11.9 11.9 0 008.64 4.381 4.73 4.73 0 01-.103-.96 4.19 4.19 0 014.19-4.19c1.205 0 2.293.5 3.058 1.293a8.25 8.25 0 002.66-1.013 4.2 4.2 0 01-1.84 2.306 8.381 8.381 0 002.404-.64 9.024 9.024 0 01-2.096 2.172z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="h-9 w-9 grid place-items-center rounded-xl border border-slate-200 hover:bg-slate-50"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8.5 8h3.84v2.18h.06c.54-1.02 1.86-2.1 3.83-2.1 4.1 0 4.86 2.7 4.86 6.2V24h-4v-7.1c0-1.7-.03-3.88-2.37-3.88-2.37 0-2.73 1.85-2.73 3.76V24h-4V8z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="h-9 w-9 grid place-items-center rounded-xl border border-slate-200 hover:bg-slate-50"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.055 1.97.24 2.43.4a4.9 4.9 0 011.77 1.15 4.9 4.9 0 011.15 1.77c.16.46.345 1.26.4 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.055 1.17-.24 1.97-.4 2.43a4.9 4.9 0 01-1.15 1.77 4.9 4.9 0 01-1.77 1.15c-.46.16-1.26.345-2.43.4-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.055-1.97-.24-2.43-.4a4.9 4.9 0 01-1.77-1.15 4.9 4.9 0 01-1.15-1.77c-.16-.46-.345-1.26-.4-2.43C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.055-1.17.24-1.97.4-2.43a4.9 4.9 0 011.15-1.77 4.9 4.9 0 011.77-1.15c.46-.16 1.26-.345 2.43-.4C8.416 2.212 8.8 2.2 12 2.2zM12 5.6a6.4 6.4 0 100 12.8A6.4 6.4 0 0012 5.6zm7.84-1.28a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("mobileMenuBtn")
+        ?.addEventListener("click", () => {
+          document.getElementById("mobileMenu")?.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
+
+<!--
+EdTech SaaS – Figma-style Wireframes + Tailwind HTML Structure
+Author: Your Name
+Notes:
+- Uses Tailwind via CDN for quick prototyping. Replace with PostCSS build for production.
+- Color accents: indigo/blue/purple/teal; whitespace-focused; rounded cards; smooth grids.
+- Consistent primitives: container widths, card, button, input, badge components.
+- Auto-layout friendly: flex/grid stacks with gap utilities; responsive via sm/md/lg.
+- Icons: inline Heroicons-like SVGs for portability.
+
+FILES IN THIS DOCUMENT
+1) index.html         – Landing page (Hero, Features, About, Footer)
+2) login.html         – Auth: Login
+3) signup.html        – Auth: Sign Up
+4) dashboard.html     – Dashboard Home (sidebar + topbar + widgets)
+5) courses.html       – Courses Grid/List
+6) assignments.html   – Assignments List with status badges
+7) profile.html       – Profile View/Edit
+
+Tip: Paste each section into its own file named accordingly, or keep as a single-page prototype for quick iteration.
+-->
+
+<!-- ============================= -->
+<!-- 1) index.html (Landing Page)  -->
+<!-- ============================= -->
