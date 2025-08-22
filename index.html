@@ -2,68 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Avaris Learn — Level up, faster.</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      html {
-        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
-          "Segoe UI Emoji";
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aljamin Learn — Level up, faster.</title>
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body class="bg-white text-slate-900">
-    <a
-      href="#main"
-      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-slate-900 text-white px-3 py-2 rounded-md"
-      >Skip to content</a
-    >
-
+  <body class="bg-white text-slate-900 font-Inter">
     <!-- Header / Nav -->
     <header
-      class="sticky top-0 z-40 backdrop-blur border-b border-slate-200/60 bg-white/70"
+      class="sticky top-0 z-40 backdrop-blur border-5 border-slate-200/60 bg-white/70"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <!-- Logo -->
-          <a href="./index.html" class="flex items-center gap-2 font-semibold">
-            <span
-              class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white"
+          <a
+            href="./index.html"
+            class="flex items-center gap-2 font-semibold md:text-xl"
+            ><span
+              class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-purple text-white"
               >A</span
-            >
-            <span class="text-slate-800">Avaris Learn</span>
-          </a>
+            ><span class="text-slate-800">Aljamin Learn</span></a
+          >
+
           <!-- Nav -->
-          <nav class="hidden md:flex items-center gap-8 text-sm">
-            <a href="#features" class="hover:text-indigo-600">Features</a>
-            <a href="#about" class="hover:text-indigo-600">About</a>
-            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+          <nav class="hidden items-center gap-8 text-sm md:flex md:text-lg">
+            <a href="#features" class="hover:text-purple">Features</a>
+            <a href="#about" class="hover:text-purple">About</a>
+            <a href="#contact" class="hover:text-purple">Contact</a>
           </nav>
+
           <!-- Actions -->
-          <div class="hidden md:flex items-center gap-3">
+          <div class="hidden items-center gap-3 md:flex">
+            <!-- Login Button -->
             <a
               href="./login.html"
-              class="text-sm font-medium hover:text-indigo-700"
+              class="text-sm font-medium hover:text-purple md:text-xl"
               >Login</a
             >
+
+            <!-- Sign up Button -->
             <a
               href="./signup.html"
-              class="inline-flex items-center justify-center text-sm font-medium rounded-xl px-4 py-2 bg-indigo-600 text-white hover:bg-indigo-700"
+              class="inline-flex items-center justify-center text-sm font-medium rounded-xl px-4 py-2 bg-purple text-white hover:bg-indigo-800 md:text-xl"
               >Sign Up</a
             >
           </div>
+
           <!-- Mobile menu button -->
           <button
             id="mobileMenuBtn"
-            class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl border border-slate-200 hover:bg-slate-50"
-            aria-label="Open menu"
+            class="inline-flex items-center justify-center h-10 w-10 rounded-xl border-slate-200 hover:bg-slate-50 md:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,6 +69,7 @@
           </button>
         </div>
       </div>
+
       <!-- Mobile Drawer -->
       <div
         id="mobileMenu"
@@ -105,84 +93,76 @@
 
     <main id="main">
       <!-- Hero -->
-      <!-- Wireframe: [Logo + Nav] [Headline + Subtext + CTA] [Illustration] -->
       <section class="relative overflow-hidden">
+        <!-- Background -->
         <div
-          class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50 via-white to-teal-50"
+          class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-600 to-teal-100"
         ></div>
+
+        <!-- Hero Content -->
         <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center"
+          class="grid px-6 py-16 mx-auto max-with-7xl md:py-24 md:grid-cols-2 gap-10 items-center"
         >
           <div class="space-y-6">
             <h1
-              class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight"
+              class="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl"
             >
               Learn faster with a
-              <span class="text-indigo-600">clear path</span>.
+              <span class="text-indigo-600">clear path</span>
             </h1>
-            <p class="text-base sm:text-lg text-slate-600 max-w-prose">
-              Avaris Learn helps you track courses, deadlines, and assignments
+
+            <p class="text-lg text-slate-600 max-w-pro">
+              Aljamin Learn helps you track courses, deadlines, and assignments
               with a calm, distraction-free dashboard. Built for students,
               creators, and teams.
             </p>
-            <div class="flex flex-wrap items-center gap-3">
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-3 items-center">
+              <!-- Sign Up Button 2 -->
               <a
                 href="./signup.html"
-                class="inline-flex items-center justify-center rounded-xl px-5 py-3 bg-indigo-600 text-white hover:bg-indigo-700 font-medium"
-                >Get Started</a
+                class="bg-purple inline-flex items-center justify-center rounded-xl px-4 py-3 text-white text-xl font-medium hover:bg-indigo-800"
               >
+                Get Started
+              </a>
+
+              <!-- Features -->
               <a
                 href="#features"
-                class="inline-flex items-center justify-center rounded-xl px-5 py-3 border border-slate-300 hover:bg-slate-50 font-medium"
-                >See features</a
+                class="inline-flex items-center justify-center border border-slate-300 rounded-xl px-4 py-3 text-xl font-medium hover:bg-slate-50"
               >
+                See Features
+              </a>
             </div>
-            <div class="flex items-center gap-6 pt-2 text-slate-500 text-sm">
+
+            <!-- Graphical addition -->
+            <div
+              class="flex flex-wrap gap-6 items-center text-slate-600 text-sm"
+            >
               <div class="flex items-center gap-2">
                 <span
-                  class="inline-block h-2.5 w-2.5 rounded-full bg-teal-500"
+                  class="inline-block bg-teal-500 size-2.5 rounded-full"
                 ></span
                 >Progress tracking
               </div>
               <div class="flex items-center gap-2">
                 <span
-                  class="inline-block h-2.5 w-2.5 rounded-full bg-purple-500"
+                  class="inline-block bg-purple-500 size-2.5 rounded-full"
                 ></span
                 >Smart reminders
               </div>
             </div>
           </div>
-          <!-- Illustration / Banner -->
+
+          <!-- Banner -->
           <div class="relative">
-            <div
-              class="aspect-[4/3] rounded-2xl border border-slate-200 bg-white shadow-sm grid place-items-center"
-            >
-              <div class="text-center p-6">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  class="mx-auto h-20 w-20 text-indigo-600"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M12 14l9-5-9-5-9 5 9 5z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5 12.083 12.083 0 015.84 10.578L12 14z"
-                  />
-                </svg>
-                <p class="mt-4 text-slate-500">
-                  Illustration placeholder
-                  <span class="block text-xs">Replace with product mockup</span>
-                </p>
-              </div>
+            <div class="aspect-[4/3] grid place-items-center">
+              <img
+                src="./image/hero-img-purple.png"
+                alt="Hero img"
+                class="w-full bg-contain border border-slate-200 shadow-sm rounded-2xl"
+              />
             </div>
           </div>
         </div>
@@ -190,22 +170,27 @@
 
       <!-- Features -->
       <section id="features" class="py-16 md:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Container -->
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <!-- info-text -->
           <div class="mb-10 text-center">
-            <h2 class="text-2xl sm:text-3xl font-semibold">
+            <h2 class="text-3xl font-semibold">
               Everything you need to stay on track
             </h2>
-            <p class="mt-3 text-slate-600">
+            <p class="text-slate-600 mt-3">
               Clean, predictable components that scale with you.
             </p>
           </div>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Feature Card -->
+
+          <!-- Features-card -->
+          <div
+            class="grid sm:grid-cols-2 gap-6 lg:place-items-center lg:grid-cols-2 lg:gap-y-10"
+          >
             <article
-              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              class="border border-slate-200 p-6 rounded-2xl bg-white shadow-sm md:w-70 md:h-50"
             >
               <div
-                class="h-10 w-10 rounded-xl bg-indigo-50 text-indigo-600 grid place-items-center"
+                class="text-purple rounded-xl bg-indigo-50 size-10 grid place-items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -222,17 +207,17 @@
                   />
                 </svg>
               </div>
-              <h3 class="mt-4 font-semibold">Course Planner</h3>
-              <p class="mt-1 text-sm text-slate-600">
+              <h2 class="mt-4 font-semibold md:text-xl">Course Planner</h2>
+              <p class="mt-1 text-sm text-slate md:text-lg">
                 Organize modules, track prerequisites, and map your learning
                 path.
               </p>
             </article>
             <article
-              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              class="border border-slate-200 p-6 rounded-2xl bg-white shadow-sm md:w-70 md:h-50"
             >
               <div
-                class="h-10 w-10 rounded-xl bg-teal-50 text-teal-600 grid place-items-center"
+                class="text-teal-600 rounded-xl bg-teal-50 size-10 grid place-items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -249,16 +234,16 @@
                   />
                 </svg>
               </div>
-              <h3 class="mt-4 font-semibold">Assignments</h3>
-              <p class="mt-1 text-sm text-slate-600">
+              <h2 class="mt-4 font-semibold md:text-xl">Assignments</h2>
+              <p class="mt-1 text-sm text-slate md:text-lg">
                 Create, submit, and grade with clear status indicators.
               </p>
             </article>
             <article
-              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              class="border border-slate-200 p-6 rounded-2xl bg-white shadow-sm md:w-70 md:h-50"
             >
               <div
-                class="h-10 w-10 rounded-xl bg-purple-50 text-purple-600 grid place-items-center"
+                class="text-purple-600 rounded-xl bg-purple-50 size-10 grid place-items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -275,16 +260,16 @@
                   />
                 </svg>
               </div>
-              <h3 class="mt-4 font-semibold">Progress</h3>
-              <p class="mt-1 text-sm text-slate-600">
+              <h2 class="mt-4 font-semibold md:text-xl">Progress</h2>
+              <p class="mt-1 text-sm text-slate md:text-lg">
                 Visualize completion with streaks and milestone badges.
               </p>
             </article>
             <article
-              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              class="border border-slate-200 p-6 rounded-2xl bg-white shadow-sm md:w-70 md:h-50"
             >
               <div
-                class="h-10 w-10 rounded-xl bg-blue-50 text-blue-600 grid place-items-center"
+                class="bg-blue-50 text-blue-600 roundd-xl size-10 grid place-items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -301,8 +286,8 @@
                   />
                 </svg>
               </div>
-              <h3 class="mt-4 font-semibold">Integrations</h3>
-              <p class="mt-1 text-sm text-slate-600">
+              <h2 class="mt-4 font-semibold md:text-xl">Integrations</h2>
+              <p class="mt-1 text-sm text-slate md:text-lg">
                 Connect calendars, storage, and LMS tools you already use.
               </p>
             </article>
@@ -313,13 +298,14 @@
       <!-- About -->
       <section
         id="about"
-        class="py-16 md:py-24 border-t border-slate-200 bg-slate-50"
+        class="py-16 border-t border-slate-200 bg-slate-50 md:py-24"
       >
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- container -->
+        <div class="max-w-5xl mx-auto px-6 md:px-8">
+          <div class="grid items-center gap-8 md:grid-cols-2">
             <div class="space-y-4">
               <h2 class="text-2xl sm:text-3xl font-semibold">
-                About Avaris Learn
+                About Aljamin Learn
               </h2>
               <p class="text-slate-600">
                 We believe education should feel focused and humane. Our
@@ -327,27 +313,33 @@
                 right step—one course, one assignment, one milestone at a time.
               </p>
               <p class="text-slate-600">
-                Designed for speed and clarity, Avaris Learn brings modern SaaS
+                Designed for speed and clarity, Aljamin Learn brings modern SaaS
                 craft to EdTech: smart defaults, predictable patterns, and
                 components you can trust.
               </p>
             </div>
+
+            <!-- About Card -->
             <div
-              class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              class="border border-slate-200 bg-white rounded-xl p-6 shadow-sm"
             >
               <dl class="grid grid-cols-2 gap-6">
+                <!-- Students supported -->
                 <div>
                   <dt class="text-sm text-slate-500">Students supported</dt>
                   <dd class="text-xl font-semibold">10k+</dd>
                 </div>
+                <!-- Productivity -->
                 <div>
                   <dt class="text-sm text-slate-500">Avg. productivity lift</dt>
                   <dd class="text-xl font-semibold">+27%</dd>
                 </div>
+                <!-- Uptime -->
                 <div>
                   <dt class="text-sm text-slate-500">Uptime</dt>
                   <dd class="text-xl font-semibold">99.9%</dd>
                 </div>
+                <!-- integrations -->
                 <div>
                   <dt class="text-sm text-slate-500">Integrations</dt>
                   <dd class="text-xl font-semibold">20+</dd>
@@ -358,42 +350,41 @@
         </div>
       </section>
 
-      <!-- Contact / CTA -->
+      <!-- Contact -->
       <section id="contact" class="py-16">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 class="text-xl sm:text-2xl font-semibold">Ready to start?</h3>
+          <h2 class="text-xl font-semibold sm:text-2xl">Ready to start?</h2>
           <p class="mt-2 text-slate-600">
-            Create an account and explore the dashboard in minutes.
+            Create an account and explore the dashboard in minutes
           </p>
           <a
             href="./signup.html"
-            class="mt-6 inline-flex items-center justify-center rounded-xl px-5 py-3 bg-indigo-600 text-white hover:bg-indigo-700 font-medium"
-            >Get Started</a
+            class="mt-6 inline-flex items-center justify-center bg-indigo-600 py-3 px-5 rounded-xl text-white font-medium hover:bg-indigo-700"
           >
+            Get Started
+          </a>
         </div>
       </section>
     </main>
-
-    <!-- Footer -->
     <footer class="border-t border-slate-200 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
         <div
-          class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+          class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center"
         >
-          <a href="#" class="flex items-center gap-2 font-semibold">
-            <span
-              class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white"
+          <a href="#" class="flex items-center gap-2 font-semibold"
+            ><span
+              class="inline-flex items-center justify-center size-8 rounded-xl bg-indigo-600 text-white"
               >A</span
-            >
-            <span class="text-slate-800">Avaris Learn</span>
-          </a>
+            ><span class="text-slate-800">Aljamin Learn</span></a
+          >
           <nav class="flex items-center gap-6 text-sm text-slate-600">
-            <a href="#about" class="hover:text-indigo-600">About</a>
-            <a href="#" class="hover:text-indigo-600">Privacy Policy</a>
-            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+            <a href="#about" class="hover:text-indigo-700">About</a>
+            <a href="#" class="hover:text-indigo-700">Privacy Policy</a>
+            <a href="#contact" class="hover:text-indigo-700">Contact</a>
           </nav>
+
+          <!-- Socials -->
           <div class="flex items-center gap-3">
-            <!-- Socials -->
             <a
               href="#"
               aria-label="Twitter"
@@ -456,29 +447,3 @@
     </script>
   </body>
 </html>
-
-<!--
-EdTech SaaS – Figma-style Wireframes + Tailwind HTML Structure
-Author: Your Name
-Notes:
-- Uses Tailwind via CDN for quick prototyping. Replace with PostCSS build for production.
-- Color accents: indigo/blue/purple/teal; whitespace-focused; rounded cards; smooth grids.
-- Consistent primitives: container widths, card, button, input, badge components.
-- Auto-layout friendly: flex/grid stacks with gap utilities; responsive via sm/md/lg.
-- Icons: inline Heroicons-like SVGs for portability.
-
-FILES IN THIS DOCUMENT
-1) index.html         – Landing page (Hero, Features, About, Footer)
-2) login.html         – Auth: Login
-3) signup.html        – Auth: Sign Up
-4) dashboard.html     – Dashboard Home (sidebar + topbar + widgets)
-5) courses.html       – Courses Grid/List
-6) assignments.html   – Assignments List with status badges
-7) profile.html       – Profile View/Edit
-
-Tip: Paste each section into its own file named accordingly, or keep as a single-page prototype for quick iteration.
--->
-
-<!-- ============================= -->
-<!-- 1) index.html (Landing Page)  -->
-<!-- ============================= -->
